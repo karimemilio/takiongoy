@@ -1,14 +1,122 @@
 /** @format */
 
+/** Asi hago referencia a la etiqueta body*/
 body {
-	background-color: #19c6ff;
+	background-color: #f4d2d3;
+	color: #000000; /** color de letra */
 }
+
+/**Anchors*/
+a {
+	text-decoration: none;
+	color: #272398;
+}
+
+/**Anchors al pasar por encima de ellos*/
+a:hover {
+	color: blueviolet;
+}
+
+/**Imagenes*/
+img {
+}
+
+/**Asi accedo a los id: # y selecciono el elemento que quiero modificar, en este caso la lista: ul*/
+#navbar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f4d2d3;
+	z-index: 100;
+}
+
+/**Cada elemento de lista li dentro de la etiqueta navbar*/
+#navbar li {
+	float: left;
+}
+
+/**Cada elemento anchor a dentro de la etiqueta navbar*/
+#navbar li a {
+	padding: 15px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	color: #161481;
+}
+
+#navbar li form {
+	padding: 15px;
+	display: inline-block;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	color: #000000;
+}
+
+/**Para darle el efecto a los links cuando paso por arriba*/
+#navbar li a:hover {
+	background-color: #00000021;
+}
+
+/**Navbar completa*/
+#navbar {
+	border-bottom: 1px solid rgb(0, 0, 0);
+	border-top: 1px solid rgb(0, 0, 0);
+	display: block;
+}
+
+/**Estilos del menu hamburguesa. Acceso a class*/
+.menu-hamburguesa {
+	color: #161481;
+	font-size: 25px;
+	padding: 10px;
+	display: none; /**Lo oculto */
+}
+
+#carrousel {
+	width: 95%;
+	padding: 20px 120px;
+	max-width: 1180px;
+	margin: auto;
+}
+
+#carrousel li {
+	/**
+    border: 1px solid
+    max-width: 1180px;
+    */
+	width: 30%;
+	padding: 1px;
+	display: inline-block;
+}
+
+#quienes-somos {
+	max-width: 1180px;
+	margin: auto;
+	padding: 10px 15px;
+	background-color: rgb(130, 198, 238);
+	border-radius: 1em;
+}
+
 footer {
-	background-color: #000000;
+	clear: both;
+	width: 100%;
+	height: 70px;
+	background-color: #0000001f;
+	position: relative;
 	padding: 10px;
 	text-align: center;
-	color: white;
+	color: #161481;
+	padding: 25px;
 }
+
+.responsive2 {
+	width: 100%;
+	height: auto;
+}
+
 @media only screen and (max-width: 600px) {
 	.responsive {
 		width: 100%;

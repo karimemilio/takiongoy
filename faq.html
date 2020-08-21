@@ -5,55 +5,105 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>FAQ - Taki Ongoy❤</title>
-		<link rel="stylesheet" type="text/css" href="estilos.css" />
+
+		<!--conecto con el CSS de Bootstrap-->
 		<link
 			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+			integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+			crossorigin="anonymous"
 		/>
+
+		<!--conecto con fontawesome para los iconos-->
+		<script
+			src="https://kit.fontawesome.com/d7f621239d.js"
+			crossorigin="anonymous"
+		></script>
+
+		<!--conecto con el CSS-->
+		<link rel="stylesheet" type="text/css" href="estilos.css" />
+
+		<!-- Nombre de la página-->
+		<title>Taki Ongoy❤</title>
 	</head>
+
 	<body>
-		<div class="header">
-			<a href="index.html"
-				><img alt="Inicio" title="Ir a la página principal" src="/img/logo.png"
-			/></a>
-			<h1 style="font-family: 'scruff';">Taki Ongoy</h1>
-		</div>
+		<!-- Header-->
+		<header>
+			<a href="index.html" title="Ir a la página principal">
+				<img id="logo" alt="Logo" src="img/encabezado.png" class="responsive" />
+			</a>
+		</header>
+
+		<!-- NavBar-->
 		<nav id="navbar">
 			<ul>
 				<li><a href="novedades.html">Novedades</a></li>
 				<li><a href="about.html">¿Quiénes somos?</a></li>
 				<li><a href="productos.html">Productos</a></li>
-				<li><a href="galeria.html">Galeria</a></li>
+				<li><a href="galeria.html">Galeríz a</a></li>
 				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="faq.html">Preguntas frecuentes</a></li>
 				<li>
-					<input
-						type="search"
-						id="buscador"
-						placeholder="Búsqueda...	 🔎"
-						size="14"
-					/>
+					<a href="faq.html">Preguntas frecuentes</a>
 				</li>
-				<li><a href="">🛒</a></li>
+
 				<li>
-					<a
-						href="https://www.facebook.com/TakiOngoyBijouterie"
-						class="fa fa-facebook"
-					></a>
+					<form class="form-inline my-2 my-lg-0">
+						<input
+							class="form-control mr-sm-2"
+							type="search"
+							placeholder="Búsqueda"
+							aria-label="Search"
+						/>
+						<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+							Buscar
+						</button>
+					</form>
 				</li>
 				<li>
-					<a
-						href="https://www.instagram.com/takiongoybijouterie/?hl=es-la"
-						class="fa fa-instagram"
-					></a>
+					<a href="https://www.facebook.com/TakiOngoyBijouterie"
+						><img
+							src="https://img.icons8.com/fluent/32/000000/facebook-new.png"
+					/></a>
+				</li>
+				<li>
+					<a href="https://www.instagram.com/takiongoybijouterie/?hl=es-la"
+						><img
+							src="https://img.icons8.com/fluent/32/000000/instagram-new.png"
+					/></a>
+				</li>
+				<li>
+					<a href="https://wireframe.cc/AW4k9w"
+						><img
+							src="https://img.icons8.com/fluent/32/000000/shopping-cart-loaded.png"
+					/></a>
 				</li>
 			</ul>
+			<div class="menu-hamburguesa">
+				<i class="fas fa-bars" aria-hidden="true"></i>
+			</div>
 		</nav>
-		<section>seccion 1</section>
-		<section>
-			seccion 2
-		</section>
+		<div id="carrousel">
+			<ul>
+				<li>Elem 1</li>
+				<li>Elem 2</li>
+				<li>Elem 3</li>
+			</ul>
+		</div>
+		<div id="quienes-somos">
+			<h1>¿Quiénes somos?</h1>
+			<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting
+				industry. Lorem Ipsum has been the industry's standard dummy text ever
+				since the 1500s, when an unknown printer took a galley of type and
+				scrambled it to make a type specimen book. It has survived not only five
+				centuries, but also the leap into electronic typesetting, remaining
+				essentially unchanged. It was popularised in the 1960s with the release
+				of Letraset sheets containing Lorem Ipsum passages, and more recently
+				with desktop publishing software like Aldus PageMaker including versions
+				of Lorem Ipsum.
+			</p>
+		</div>
 		<footer>Aca va el footer</footer>
 	</body>
 </html>
