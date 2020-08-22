@@ -1,9 +1,13 @@
 /** @format */
 
+/* Importo una fuente que uso mas abajo*/
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+
 /** Asi hago referencia a la etiqueta body*/
 body {
 	background-color: #f4d2d3;
 	color: #000000; /** color de letra */
+	font-family: "Alata", sans-serif;
 }
 
 /**Anchors*/
@@ -79,21 +83,17 @@ a {
 	display: none; /**Lo oculto */
 }
 
-#carrousel {
-	width: 95%;
-	padding: 20px 120px;
-	max-width: 1180px;
-	margin: auto;
+#carrousel li {
+	list-style-type: none;
+	float: left;
+	width: 33%;
+	padding: 5px;
 }
 
-#carrousel li {
-	/**
-    border: 1px solid
-    max-width: 1180px;
-    */
-	width: 30%;
-	padding: 1px;
-	display: inline-block;
+#carrousel ::after {
+	content: "";
+	clear: both;
+	display: table;
 }
 
 #quienes-somos {

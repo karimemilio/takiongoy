@@ -30,24 +30,27 @@
 	<body>
 		<!-- Header-->
 		<header>
-			<a href="index.html" title="Ir a la página principal">
+			<a href="/index.html" title="Ir a la página principal">
 				<img id="logo" alt="Logo" src="img/encabezado.png" class="responsive" />
 			</a>
 		</header>
 
 		<!-- NavBar-->
 		<nav id="navbar">
-			<ul>
-				<li><a href="novedades.html">Novedades</a></li>
-				<li><a href="about.html">¿Quiénes somos?</a></li>
-				<li><a href="productos.html">Productos</a></li>
-				<li><a href="galeria.html">Galería</a></li>
-				<li><a href="contacto.html">Contacto</a></li>
+			<div class="menu-hamburguesa">
+				<i class="fas fa-bars" aria-hidden="true"></i>
+			</div>
+			<ul class="lista-sm">
+				<li><a href="/novedades.html">Novedades</a></li>
+				<li><a href="/about.html">¿Quiénes somos?</a></li>
+				<li><a href="/productos.html">Productos</a></li>
+				<li><a href="/galeria.html">Galería</a></li>
+				<li><a href="/contacto.html">Contacto</a></li>
 				<li>
-					<a href="faq.html">Preguntas frecuentes</a>
+					<a href="/faq.html">Preguntas frecuentes</a>
 				</li>
 
-				<li>
+				<li id="buscador">
 					<form class="form-inline my-2 my-lg-0">
 						<input
 							class="form-control mr-sm-2"
@@ -55,49 +58,57 @@
 							placeholder="Búsqueda"
 							aria-label="Search"
 						/>
-						<button class="btn btn-outline-dark my-2 my-sm-0" type="submit">
+						<button class="btn btn-secondary btn-sm" type="submit">
 							Buscar
 						</button>
 					</form>
 				</li>
-				<li>
-					<a href="https://www.facebook.com/TakiOngoyBijouterie"
-						><img
-							src="https://img.icons8.com/fluent/32/000000/facebook-new.png"
-					/></a>
-				</li>
-				<li>
-					<a href="https://www.instagram.com/takiongoybijouterie/?hl=es-la"
-						><img
-							src="https://img.icons8.com/fluent/32/000000/instagram-new.png"
-					/></a>
-				</li>
-				<li>
-					<a href="https://wireframe.cc/AW4k9w"
-						><img
-							src="https://img.icons8.com/fluent/32/000000/shopping-cart-loaded.png"
-					/></a>
-				</li>
+				<div id="redes">
+					<li>
+						<a href="https://www.facebook.com/TakiOngoyBijouterie"
+							><img
+								src="https://img.icons8.com/fluent/23/000000/facebook-new.png"
+						/></a>
+					</li>
+					<li>
+						<a href="https://www.instagram.com/takiongoybijouterie/?hl=es-la"
+							><img
+								src="https://img.icons8.com/fluent/23/000000/instagram-new.png"
+						/></a>
+					</li>
+					<li>
+						<a href="https://wireframe.cc/AW4k9w"
+							><img
+								src="https://img.icons8.com/fluent/23/000000/shopping-cart-loaded.png"
+						/></a>
+					</li>
+				</div>
 			</ul>
-			<div class="menu-hamburguesa">
-				<i class="fas fa-bars" aria-hidden="true"></i>
-			</div>
 		</nav>
 		<div id="carrousel">
 			<ul>
 				<li>
 					<a href="https://placeholder.com"
-						><img src="https://via.placeholder.com/150" class="resposive2"
+						><img
+							src="http://lorempixel.com/400/200"
+							class="resposive2"
+							style="width: 100%;"
 					/></a>
 				</li>
 				<li>
 					<a href="https://placeholder.com"
-						><img src="https://via.placeholder.com/150" class="resposive2"
+						><img
+							src="http://lorempixel.com/400/200"
+							class="resposive2"
+							style="width: 100%;"
 					/></a>
 				</li>
 				<li>
 					<a href="https://placeholder.com"
-						><img src="https://via.placeholder.com/150" class="resposive2"
+						><img
+							src="http://lorempixel.com/400/200"
+							class="resposive2"
+							style="width: 100%;"
 					/></a>
 				</li>
 			</ul>
@@ -117,5 +128,9 @@
 			</p>
 		</div>
 		<footer>Taki Ongoy - Sitio en desarrollo - Kaku's company</footer>
+		<!-- Cargo JQUERY del servidor de google -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<!-- Hago que JQery interactue con el sitio web -->
+		<script src="script.js"></script>
 	</body>
 </html>
